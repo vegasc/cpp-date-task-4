@@ -13,7 +13,11 @@ using namespace std;
 
 int main(int argc, const char * argv[]) {
     
-    Date date = Date(SECONDS_PER_DAY*3);
+    int long seconds = 0;
+    cout << "seconds: " << endl;
+    cin >> seconds;
+    
+    Date date = Date(seconds);
 
     DateFormatter dateFormatter = DateFormatter(date);
     DateInfo info = dateFormatter.getFullInfo();
